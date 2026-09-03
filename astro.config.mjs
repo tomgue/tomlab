@@ -83,7 +83,8 @@ export default defineConfig({
     enabled: true
   },
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
-  '/privacy': '/privacy-policy'
+  '/privacy': '/privacy-policy',
+  '/projects/obsidian-astro-composer': '/projects/astro-composer'
 } : {},
 image: {
     service: {

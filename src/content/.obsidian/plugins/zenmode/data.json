@@ -1,7 +1,7 @@
 {
   "zenMode": false,
   "leftSidebar": false,
-  "rightSidebar": true,
+  "rightSidebar": false,
   "fullscreen": false,
   "exitButtonVisibility": "always",
   "autoHideButtonOnDesktop": true,
@@ -12,5 +12,6 @@
   "focusedFileMode": true,
   "hideStatusBar": false,
   "hideLinkedMentions": false,
-  "hideScrollBar": false
+  "hideScrollBar": false,
+  "hideSpellcheck": false
 }

@@ -162,6 +162,12 @@
   force = true
 
 [[redirects]]
+  from = "/projects/obsidian-astro-composer"
+  to = "/projects/astro-composer"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/404"
   status = 404
