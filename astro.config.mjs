@@ -33,6 +33,7 @@ const DEPLOYMENT_PLATFORM = process.env.DEPLOYMENT_PLATFORM || 'netlify';
 
 export default defineConfig({
   site: siteConfig.site,
+  base: '/tomlab/',
   deployment: {
     platform: DEPLOYMENT_PLATFORM
   },

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: tomgue/sandboxe
+  repo: tomgue/tomlab
   branch: main
 
 publish_mode: editorial_workflow
