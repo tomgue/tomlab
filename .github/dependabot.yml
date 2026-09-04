@@ -1,0 +1,58 @@
+version: 2
+
+updates:
+  # Maintain dependencies for npm packages (pnpm)
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "09:00"
+      timezone: Europe/Paris
+    open-pull-requests-limit: 10
+    labels:
+      - dependencies
+      - npm
+    commit-message:
+      prefix: "deps"
+      include: scope
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - version-update:semver-major
+    groups:
+      astro:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+      tailwind:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
+      fonts:
+        patterns:
+          - "@fontsource/*"
+      swup:
+        patterns:
+          - "swup"
+          - "@swup/*"
+      dev-dependencies:
+        patterns:
+          - "wrangler"
+          - "cross-env"
+        dependency-type: "development"
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: github-actions
+    directory: "/.github/workflows"
+    schedule:
+      interval: weekly
+      day: monday
+      time: "10:00"
+      timezone: Europe/Paris
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+      - actions
+    commit-message:
+      prefix: "deps"
+      include: scope
