@@ -12,7 +12,7 @@
     }
   },
   "siteInfo": {
-    "site": "https://astro-modular.netlify.app",
+    "site": "https://tomgue.github.io/tomlab/",
     "title": "TomLab",
     "description": "Petit blog note perso",
     "author": "Thomas",
@@ -29,7 +29,7 @@
   },
   "footer": {
     "enabled": true,
-    "content": "© 2026 {author}. Built with the <a href=\"https://github.com/davidvkimball/astro-modular\" target=\"_blank\">Astro Modular</a> theme.",
+    "content": "© 2026 {author}. Propulsé par <a href=\"https://astro.build\" target=\"_blank\" rel=\"noopener noreferrer\">Astro</a> et le thème <a href=\"https://github.com/davidvkimball/astro-modular\" target=\"_blank\" rel=\"noopener noreferrer\">Astro Modular</a>.",
     "showSocialIconsInFooter": true
   },
   "seo": {
@@ -163,9 +163,6 @@
     "profilePicture": false,
     "comments": false,
     "featureButton": "mode",
-    "showPostCardCoverImages": "featured-and-posts",
-    "postCardAspectRatio": "og",
-    "customPostCardAspectRatio": "2.5/1",
     "quickActions": {
       "enabled": true,
       "toggleMode": true,
@@ -215,7 +212,7 @@
     }
   },
   "deployment": {
-    "platform": "netlify"
+    "platform": "github-pages"
   },
   "pluginConfig": {
     "obsidianSettings": {
