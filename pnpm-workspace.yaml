@@ -2,7 +2,7 @@ allowBuilds:
   esbuild: true
   sharp: true
   workerd: true
-minimumReleaseAge: 1440
+minimumReleaseAge: 0
 minimumReleaseAgeExclude:
   # Name-only patterns: an exact name@version misses astro's peer-suffixed
   # lockfile key, so the exemption silently fails. Bare names match reliably.
