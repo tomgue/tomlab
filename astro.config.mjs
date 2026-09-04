@@ -65,10 +65,10 @@ export default defineConfig({
       ]
     },
     imgDirective: {
-      resources: ["'self'", "data:", "https:"]
+      resources: ["'self'", "data:", "https:", "https://*.githubusercontent.com", "https://picsum.photos", "https://fastly.picsum.photos", "https://images.pexels.com", "https://pixabay.com", "https://images.unsplash.com"]
     },
     connectDirective: {
-      resources: ["'self'", "https://giscus.app"]
+      resources: ["'self'", "https://giscus.app", "https://api.github.com", "https://www.githubstatus.com", "https://picsum.photos", "https://images.pexels.com", "https://api.pexels.com", "https://pixabay.com", "https://images.unsplash.com", "https://api.unsplash.com"]
     },
     frameDirective: {
       resources: [
