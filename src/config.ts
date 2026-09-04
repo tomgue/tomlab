@@ -315,11 +315,11 @@ export const siteConfig: SiteConfig = {
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
-      { title: "Posts", url: "/posts/" },
-      { title: "Docs", url: "/docs/" },
-      { title: "A-propos", url: "/a-propos/" },
-      { title: "Contact", url: "/contact/" },
-      { title: "Privacy", url: "/privacy-policy/" }
+      { title: "Posts", url: "posts/" },
+      { title: "Docs", url: "docs/" },
+      { title: "A-propos", url: "a-propos/" },
+      { title: "Contact", url: "contact/" },
+      { title: "Privacy", url: "privacy-policy/" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
