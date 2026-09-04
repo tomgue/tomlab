@@ -183,7 +183,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.netlify.app",
+  site: "https://tomgue.github.io/tomlab/",
   // [CONFIG:SITE_TITLE]
   title: "TomLab",
   // [CONFIG:HOMEPAGE_TITLE]
