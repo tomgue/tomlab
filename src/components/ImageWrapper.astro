@@ -76,9 +76,8 @@ let isImageMissing = false;
 
 if (isLocal) {
   try {
-    const files = import.meta.glob<ImageMetadata>("/public/**", {
-      import: "default",
-    });
+    const files = import.meta.glob<ImageMetadata>("/public/**,{jpg,jpeg,pgn,gif,bmp,tiff,tif,webp,avif,svg}",
+      { import: "default",});
     
     // Remove leading "./" if present for folder-based posts
     if (cleanSrc.startsWith('./')) {
