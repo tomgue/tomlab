@@ -206,7 +206,7 @@ image: {
       'process.env.ASTRO_CONTENT_COLLECTION_CACHE': 'false'
     },
     optimizeDeps: {
-      exclude: ['astro:content', 'public/admin/**'],
+      exclude: ['astro:content'],
       // Pre-bundle these at dev startup instead of letting Vite discover them
       // lazily. Without this, the first page that pulls one in triggers a
       // re-optimization, which changes the ?v= hash on every optimized module,
@@ -225,7 +225,7 @@ image: {
         'mermaid'
       ]
     },
-    exclude: ['**/_redirects', 'public/admin/**']
+    exclude: ['**/_redirects']
   },
   build: {
     assets: '_assets'
